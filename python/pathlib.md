@@ -1,4 +1,4 @@
-# Pathlib - Cheetsheet
+# Pathlib - Cheatsheet
 
 An object oriented way to deal with filesystem paths in Python, more convenient than using `os.path.join()` etc.
 
