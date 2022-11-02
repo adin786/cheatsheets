@@ -53,10 +53,14 @@ from pathlib import Path
 ### Methods of `Path()`
 ```python
 >>> p = Path('folder') / 'subfolder' / 'file.txt'
->>> p               # PosixPath('folder/subfolder/file.txt')
->>> p.absolute()    # PosixPath('/workspaces/project_folder/folder/subfolder/file.txt')
->>> p.is_file()     # True
->>> p.is_dir()      # False
+>>> p                       # PosixPath('folder/subfolder/file.txt')
+>>> p.absolute()            # PosixPath('/workspaces/project_folder/folder/subfolder/file.txt')
+>>> p.is_file()             # True
+>>> p.is_dir()              # False
+>>> p.read_text()           # Returns text contents -> 'Text'
+>>> p.read_bytes()          # Returns bytes contents -> b'Bytes'
+>>> p.write_text('Text')    # Writes text contents
+>>> p.write_bytes('Bytes')  # Writes bytes contents
 ```
 
 ### Other handy snippets
